@@ -1,0 +1,17 @@
+{
+  "todos": [
+    {
+      "name": "get the mail",
+      "completed": false
+    }, {
+      "name": "walk the dog",
+      "completed": false
+    }, {
+      "name": "wash the dishes",
+      "completed": false
+    }, {
+      "name": "cook dinner",
+      "completed": false
+    },
+  ]
+}
