@@ -7,8 +7,8 @@ let initialState = {
 const todoApp = (state = initialState, action) => {
   switch (action.type) {
     case 'ADD_TODO':
-    console.log(state);
       return {
+        ...state,
         todos: [
           ...state.todos,
           {
@@ -19,8 +19,17 @@ const todoApp = (state = initialState, action) => {
         ]
       }
     case 'TOGGLE_TODO':
-      console.log(state);
-    break;
+    console.log(state);
+      return {
+        ...state,
+        todos: state.todos.map(todo => {
+          if (todo.id === action.id) {
+            return {...todo, completed: !todo.completed}
+          } else {
+            return {...todo}
+          }
+        })
+      }
     default:
       return state;
   }

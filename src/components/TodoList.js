@@ -10,7 +10,7 @@ let TodoList = ({ todos, dispatch }) => {
         <Todo
           key={todo.id}
           onClick={() => dispatch(toggleTodo(todo.id))}
-          {...todo}/>
+          todo={todo}/>
       )}
      </ul>
  );
