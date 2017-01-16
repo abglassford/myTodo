@@ -7,6 +7,7 @@ let initialState = {
 const todoApp = (state = initialState, action) => {
   switch (action.type) {
     case 'ADD_TODO':
+    console.log(state);
       return {
         todos: [
           ...state.todos,
@@ -18,8 +19,8 @@ const todoApp = (state = initialState, action) => {
         ]
       }
     case 'TOGGLE_TODO':
-      console.log('toggleTodo');
-      break
+      console.log(state);
+    break;
     default:
       return state;
   }

@@ -1,7 +1,9 @@
 import React from 'react';
 
 const Todo = ( {onClick, completed, text} ) => (
-  <li>
+  <li
+    onClick={onClick}
+    >
     {text}
   </li>
 )
