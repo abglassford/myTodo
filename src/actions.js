@@ -1,14 +1,21 @@
-import axios from 'axios';
-const domain = "http://localhost:9999";
+export const ADD_TODO = 'ADD_TODO'
+export const TOGGLE_TODO = 'TOGGLE_TODO'
+export const SET_VISIBILITY_FILTER = 'SET_VISIBILITY_FILTER'
 
-const storeTodos = (todos) => ({
-  type: 'STORE_TODOS',
-  payload: todos
-});
+export const VisibilityFilters = {
+  SHOW_ALL: 'SHOW_ALL',
+  SHOW_COMPLETED: 'SHOW_COMPLETED',
+  SHOW_ACTIVE: 'SHOW_ACTIVE'
+}
 
-const getTodos = (dispatch) => {
-  axios.get(`${domain}/todos`)
-  .then(data => dispatch(storeTodos(data.data)))
-};
+export function addTodo(text) {
+  return { type: ADD_TODO, text }
+}
 
-export { getTodos };
+export function toggleTodo(index) {
+  return { type: TOGGLE_TODO, index }
+}
+
+export function setVisibilityFilter(filter) {
+  return { type: SET_VISIBILITY_FILTER, filter }
+}

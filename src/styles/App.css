@@ -7,3 +7,7 @@
   font-size: 70px;
   color: rgb(150, 150, 150);
 }
+
+ul {
+ list-style: none;
+}

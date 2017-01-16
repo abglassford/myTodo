@@ -1,8 +1,17 @@
-export default function todos(state = ['take out the trash', 'wash the dishes'], action) {
+let initialState = {
+  todos: []
+}
+
+function todoApp(state = initialState, action) {
   switch (action.type) {
-    case 'STORE_TODOS':
-      return [...state, ...action.payload];
+    case 'ADD_TODO':
+      console.log(state);
+      return {
+        todos: [...state.todos, action.text]
+      }
     default:
       return state;
   }
 };
+
+export default todoApp
