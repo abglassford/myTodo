@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Todos from './Todos';
+import TodoList from './TodoList';
 import '../styles/App.css';
 import { connect } from 'react-redux';
 
@@ -8,7 +8,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="title">Todos</h1>
-        <Todos />
+        <TodoList />
       </div>
     );
   };

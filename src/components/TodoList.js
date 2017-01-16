@@ -1,8 +1,9 @@
 import React from 'react';
+import Todo from './Todo';
 import { connect } from 'react-redux';
 import { addTodo } from '../actions';
 
-let Todos = ({ todos, dispatch }) => {
+let TodoList = ({ todos, dispatch }) => {
   let input;
 
   return (
@@ -23,7 +24,7 @@ let Todos = ({ todos, dispatch }) => {
        </button>
      </form>
      <ul>
-      {todos.map((todo, i)=> <li key={i}>{todo}</li>)}
+      {todos.map((todo, i) => <Todo key={i} text={todo}/>)}
      </ul>
    </div>
  );
@@ -33,4 +34,4 @@ const mapStateToProps = (state) => {
   return { todos: state.todos }
 }
 
-export default connect(mapStateToProps)(Todos);
+export default connect(mapStateToProps)(TodoList);
