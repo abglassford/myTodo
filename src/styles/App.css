@@ -11,3 +11,8 @@
 ul {
  list-style: none;
 }
+
+.footer > * {
+  display: inline;
+  margin-right: 4px;
+}

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import TodoList from './TodoList';
 import AddTodo from './AddTodo';
+import Footer from './Footer';
 import '../styles/App.css';
-import { connect } from 'react-redux';
 
 class App extends Component {
   render() {
@@ -11,9 +11,10 @@ class App extends Component {
         <h1 className="title">Todos</h1>
         <AddTodo />
         <TodoList />
+        <Footer />
       </div>
     );
   };
 };
 
-export default connect()(App);
+export default App

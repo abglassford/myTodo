@@ -5,14 +5,14 @@ import { toggleTodo } from '../actions';
 
 let TodoList = ({ todos, dispatch }) => {
   return (
-     <ul>
+     <div>
       {todos.map((todo, i) =>
         <Todo
           key={todo.id}
           onClick={() => dispatch(toggleTodo(todo.id))}
           todo={todo}/>
       )}
-     </ul>
+    </div>
  );
 };
 
