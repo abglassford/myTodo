@@ -1,7 +1,7 @@
 export const ADD_TODO = 'ADD_TODO'
 export const TOGGLE_TODO = 'TOGGLE_TODO'
 export const SET_VISIBILITY_FILTER = 'SET_VISIBILITY_FILTER'
-import uuid from 'uuid/v1';
+
 
 export const VisibilityFilters = {
   SHOW_ALL: 'SHOW_ALL',
@@ -10,12 +10,7 @@ export const VisibilityFilters = {
 }
 
 export function addTodo(text) {
-  return { type: ADD_TODO, todo: {
-      text: text,
-      id: uuid(),
-      completed: false
-    }
-  }
+  return { type: ADD_TODO, text}
 }
 
 export function toggleTodo(index) {

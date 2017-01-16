@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Todo = ( {onClick, todo} ) => (
+const Todo = ( {onClick, completed, text} ) => (
   <li>
-    {todo.text}
+    {text}
   </li>
 )
 

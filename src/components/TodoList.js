@@ -24,7 +24,7 @@ let TodoList = ({ todos, dispatch }) => {
        </button>
      </form>
      <ul>
-      {todos.map((todo, i) => <Todo key={todo.id} todo={todo}/>)}
+      {todos.map((todo, i) => <Todo key={todo.id} {...todo}/>)}
      </ul>
    </div>
  );
