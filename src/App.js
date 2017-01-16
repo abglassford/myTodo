@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Todos from './Todos';
-import './App.css';
+import './styles/App.css';
 import reducer from './reducers';
 import { createStore } from 'redux';
 
