@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import TodoList from './TodoList';
+import VisibleTodoList from './VisibleTodoList';
 import AddTodo from './AddTodo';
 import Footer from './Footer';
 import '../styles/App.css';
@@ -10,7 +10,7 @@ class App extends Component {
       <div className="App">
         <h1 className="title">Todos</h1>
         <AddTodo />
-        <TodoList />
+        <VisibleTodoList />
         <Footer />
       </div>
     );
