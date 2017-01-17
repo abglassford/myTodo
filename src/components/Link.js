@@ -5,7 +5,7 @@ const Link = ({ active, children, onClick }) => {
     return <button style={{
       "backgroundColor": "rgb(228, 97, 97)"
       }}>{children}</button>
-  }
+  };
 
   return (
     <button
@@ -16,7 +16,7 @@ const Link = ({ active, children, onClick }) => {
     >
       {children}
     </button>
-  )
-}
+  );
+};
 
 export default Link;

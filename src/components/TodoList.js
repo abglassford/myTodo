@@ -1,5 +1,5 @@
-import React from 'react'
-import Todo from './Todo'
+import React from 'react';
+import Todo from './Todo';
 
 const TodoList = ({ todos, onTodoClick }) => (
   <div>
@@ -11,6 +11,6 @@ const TodoList = ({ todos, onTodoClick }) => (
       />
     )}
   </div>
-)
+);
 
-export default TodoList
+export default TodoList;

@@ -9,6 +9,6 @@ const Todo = ({ onClick, todo }) => (
     >
     {todo.text}
   </p>
-)
+);
 
 export default Todo;
